@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .filter-blur{filter: blur();}
+        .filter-brightness{filter: brightness();}
+        .filter-contrast{filter: contrast();}
+        .filter-grayscale{filter: grayscale();} */
+        
+        .filter-blur:hover{ filter: blur(5px);}
+        .filter-brightness:hover{ filter: brightness(0.4);}
+        .filter-contrast:hover{ filter: contrast(200%);}
+        .filter-drop:hover{ filter: drop-shadow(16px 16px 20px blue);}
+        .filter-grayscale:hover{ filter: grayscale(50%);}
+        .filter-hue:hover{ filter: hue-rotate(90deg);}
+        .filter-invert:hover{ filter: invert(75%);}
+        .filter-opacity:hover{ filter: opacity(25%);}
+        .filter-saturate:hover{ filter: saturate(30%);}
+        .filter-sepia:hover{ filter: sepia(60%);}
+        .row{display: flex;flex-wrap: wrap; gap: 10px; } 
+        .col{ width:20%; }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        img{width: 100%;}
+    </style>
+</head>
+<body>
+    filter-blur
+    filter-brightness
+    filter-contrast
+    filter-drop-shadow
+    filter-grayscale
+    filter-hue-rotate
+    filter-invert
+    filter-opacity
+    filter-saturate
+    filter-sepia
+    <ol>
+        <li> filter: blur(5px);</li>
+        <li> filter: brightness(0.4);</li>
+        <li> filter: contrast(200%);</li>
+        <li> filter: drop-shadow(16px 16px 20px blue);</li>
+        <li> filter: grayscale(50%);</li>
+        <li> filter: hue-rotate(90deg);</li>
+        <li> filter: invert(75%);</li>
+        <li> filter: opacity(25%);</li>
+        <li> filter: saturate(30%);</li>
+        <li> filter: sepia(60%);</li>
+    </ol>
+    <div class="container">
+        <div class="row">
+            <div class="col"><img src="2.jpeg" class="filter-blur" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-brightness" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-contrast" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-drop" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-grayscale" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-hue" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-invert" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-opacity" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-saturate" alt=""></div>
+            <div class="col"><img src="2.jpeg" class="filter-sepia" alt=""></div>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        /* .row */
+        .d-flex {
+            display: flex;
+            background-color: brown;
+            height: 70px;
+            margin: 20px;
+        }
+
+        .d-flex-wrp {
+            display: flex;
+            background-color: brown;
+            /* height: 70px; */
+            margin: 20px;
+            flex-wrap: wrap-reverse;
+        }
+
+        .col {
+            background-color: rgb(30, 191, 44);
+            height: 50px;
+        }
+
+        .fd-col {
+            flex-direction: column;
+        }
+
+        .fd-col-rev {
+            flex-direction: column-reverse;
+        }
+
+        .fd-row {
+            flex-direction: row;
+        }
+
+        .fd-row-rev {
+            flex-direction: row-reverse;
+        }
+
+        .align-content-b {
+            align-content: baseline;
+        }
+
+        .align-content-c {
+            align-content: center;
+        }
+
+        .align-content-e {
+            align-content: end;
+        }
+
+        .align-content-s {
+            align-content: start;
+        }
+
+        .col-6 {
+            width: 50%;
+            background-color: rgb(30, 191, 44);
+            height: 50px;
+        }
+
+        .flex-flow {
+            flex-flow: column;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+        <div class="col">Col4</div>
+        <div class="col">Col5</div>
+    </div>
+    <div class="d-flex">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+    </div>
+    <h3>flex-direction-column</h3>
+    <div class="d-flex fd-col">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h3>flex-direction-column reverse</h3>
+    <div class="d-flex fd-col-rev">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h3>flex-direction-row</h3>
+    <div class="d-flex fd-row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h3>flex-direction-row reverse</h3>
+    <div class="d-flex fd-row-rev">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+
+    <h3>align-content-b</h3>
+    <div class="d-flex">
+        <div class="col align-content-b">Col1</div>
+        <div class="col  align-content-b">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h3>align-content-c</h3>
+    <div class="d-flex">
+        <div class="col align-content-c">Col1</div>
+        <div class="col  align-content-c">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h3>align-content-e</h3>
+    <div class="d-flex">
+        <div class="col align-content-e">Col1</div>
+        <div class="col  align-content-e">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h3>align-content-s</h3>
+    <div class="d-flex">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h3>flex-wrap</h3>
+    <div class="d-flex-wrp wrap">
+        <div class="col-6 align-content-s">Col1</div>
+        <div class="col-6 align-content-s">Col2</div>
+        <div class="col-6">Col3</div>
+    </div>
+    <div class="d-flex-wrp wrap">
+        <div class="col-6 align-content-s">Col1</div>
+        <div class="col-6  align-content-s">Col2</div>
+    </div>
+    <div class="d-flex-wrp wrap">
+        <div class="col-6 align-content-s">Col1</div>
+        <div class="col-6  align-content-s">Col2</div>
+        <div class="col-6  align-content-s">Col3</div>
+        <div class="col-6  align-content-s">Col4</div>
+        <div class="col-6  align-content-s">Col5</div>
+    </div>
+    <h3>flex-flow</h3>
+    <div class="d-flex flex-flow">
+        <div class="col-6 align-content-s">Col1</div>
+        <div class="col-6  align-content-s">Col2</div>
+        <div class="col-6  align-content-s">Col3</div>
+        <div class="col-6  align-content-s">Col4</div>
+        <div class="col-6  align-content-s">Col5</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>justify-content</h2>
+    <h3>space-around</h3>
+    <div class="d-flex" style="justify-content: space-around;">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div>
+    <h3>space-between</h3>
+    <div class="d-flex" style="justify-content: space-between;">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div>
+    <h3>space-evenly</h3>
+    <div class="d-flex" style="justify-content: space-evenly;">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div>
+    <header>
+        <div class="d-flex" style="justify-content: space-between;">
+            <div class="logo">logo</div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="social">social</div>
+        </div>
+    </header>
+
+    <h3>align-items: start;</h3>
+    <div class="d-flex" style="align-items: start;">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div>
+    <h3>align-items: center;</h3>
+    <div class="d-flex" style="align-items: center;">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div>
+    <h3>align-items: end;</h3>
+    <div class="d-flex" style="align-items: end;">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div>
+    <h3>align-items: stretch;</h3>
+    <div class="d-flex" style="align-items: stretch;">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div>
+    <h3>align-items: baseline;</h3>
+    <div class="d-flex" style="align-items: baseline;">
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div>
+    <style>
+        /* .container {
+            display: flex;
+            gap: 10px;
+            gap: 10px 20px;
+            row-gap: 10px;
+            column-gap: 20px;
+        } */
+         .col-3{
+            width: 30%;
+            background-color: green;
+         }
+    </style>
+    <!-- <div class="container" >
+        <div class="col align-content-s">Col1</div>
+        <div class="col  align-content-s">Col2</div>
+        <div class="col  align-content-s">Col3</div>
+        <div class="col  align-content-s">Col4</div>
+        <div class="col  align-content-s">Col5</div>
+    </div> -->
+    
+    <div class="d-flex" style="gap: 50px; flex-wrap: wrap;">
+        <div class="col-3 align-content-s">Col1</div>
+        <div class="col-3  align-content-s">Col2</div>
+        <div class="col-3  align-content-s">Col3</div>
+        <div class="col-3  align-content-s">Col4</div>
+        <div class="col-3  align-content-s">Col5</div>
+    </div>
+</body>
+
+</html>

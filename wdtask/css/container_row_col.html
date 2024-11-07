@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+        .container {
+            max-width: 1140px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .container-fluid {
+            width:100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            /* margin-right: auto;
+            margin-left: auto; */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col {
+            padding-right: 15px;
+            padding-left: 15px;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    data
+    <div class="container"> data </div>
+    <div class="container">
+        <div class="row"> container>row>Data </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">container>row>col>Data1</div>
+        </div>
+        <div class="row">
+            <div class="col">container>row>col>Data1</div>
+            <div class="col">container>row>col>Data2</div>
+        </div>
+        <div class="row">
+            <div class="col">container>row>col>Data1</div>
+            <div class="col">container>row>col>Data2</div>
+            <div class="col">container>row>col>Data3</div>
+        </div>
+        <div class="row">
+            <div class="col">container>row>col>Data1</div>
+            <div class="col">container>row>col>Data2</div>
+            <div class="col">container>row>col>Data3</div>
+            <div class="col">container>row>col>Data4</div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">container>row>col>Data1</div>
+        </div>
+        <div class="row">
+            <div class="col">container>row>col>Data1</div>
+            <div class="col">container>row>col>Data2</div>
+        </div>
+        <div class="row">
+            <div class="col">container>row>col>Data1</div>
+            <div class="col">container>row>col>Data2</div>
+            <div class="col">container>row>col>Data3</div>
+        </div>
+        <div class="row">
+            <div class="col">container>row>col>Data1</div>
+            <div class="col">container>row>col>Data2</div>
+            <div class="col">container>row>col>Data3</div>
+            <div class="col">container>row>col>Data4</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex{display: flex;}
+.ml-a{margin-left: auto;}
+.comtainer-fluid{ padding: 0 2em; }
+.hedaer-menu{ line-height: 60px;background-color: #0A0A0C;color: white; }

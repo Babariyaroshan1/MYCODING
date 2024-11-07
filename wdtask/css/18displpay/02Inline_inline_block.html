@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0; padding: 0; box-sizing: border-box;}
+        .dis-inline{ display: inline; }
+        .dis-inline-block{ display: inline-block; }
+        div[class*="dis"]{ background-color: teal; color: white; width: 200px;height: 100px; margin: 50px; }
+        li{display: inline;}
+        header {
+            background-color: darkcyan;
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+        }
+ </style>
+</head>
+<body>
+    <p>display inline not supporting width/height</p>
+    <p>display inline margin only works for left-right not working for top-bottom</p>
+    <p>display inline-block supporting width/height</p>
+    <div class="dis-inline">Data dis-inline</div>
+    <div class="dis-inline-block">Data dis-inline-block</div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
